@@ -27,4 +27,8 @@ public class Player {
 	
 	public void remember (boolean opponentChoice) {		
 	}
+
+	public String toString() {
+		return "Player: " + this.score();
+	}
 }
