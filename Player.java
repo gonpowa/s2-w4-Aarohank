@@ -5,7 +5,7 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Player {
+public class Player implements Comparable<Player>{
 	
 	private int myScore;
 	
@@ -31,4 +31,10 @@ public class Player {
 	public String toString() {
 		return "Player: " + this.score();
 	}
+
+	public int compareTo(Player other) {
+		return this.score() - other.score();
+	}
+
+	
 }
